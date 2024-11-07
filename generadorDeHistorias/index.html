@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Historias</title>
+</head>
+<body>
+    <fieldset>
+        <label for="nombreProta">Nombre del protagonista: </label>
+        <input type="text" name="nombreProta" id="nombreProta">
+        <br><br>
+        <label for="lepero">LEPERO</label>
+        <input type="radio" name="tipo" id="lepero" checked onchange="actualizarTipo()">
+        <label for="murciano">MURCIANO</label>
+        <input type="radio" name="tipo" id="murciano" onchange="actualizarTipo()">
+        <br><br>
+        <button onclick="mostrarHistoria()">Generar una historia aleatoria</button>
+    </fieldset>
+    <div id="mostrarHistoria"></div>
+    <script src="main.js"></script>
+</body>
+</html>
